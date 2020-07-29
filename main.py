@@ -5,11 +5,22 @@ from fastapi.responses import JSONResponse
 from service.comment import get_comments
 from service.transcript import get_transcripts
 from pydantic import BaseModel
+from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
+origins = [
+    "https://youtubenlp.com",
+    "http://localhost",
+    "https://localhost",
+    "http://localhost:8080",
+    "https://localhost:8080",
+]
 
-class Item(BaseModel):
-	videoID: str
-	kTopComments: int
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.get('/score/transcripts/{video_id}')
 def transcripts(video_id: str):
