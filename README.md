@@ -9,7 +9,7 @@
 # Setup
 $ https://github.com/YouTubeNLP/Backend.git
 $ cd Backend/
-$ git switch -c remotes/origin/fastapi_version
+$ git switch -c remotes/origin/improvement/new-endpoints-and-cors
 ```
 
 ## Setup
