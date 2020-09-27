@@ -203,7 +203,7 @@ async def root(request: Request):
                 "endpoint": [f"{base_url}docs", f"{base_url}redoc"],
             },
             "dev": {
-                "description": "Returns standard API refrence",
+                "description": "Returns standard API reference",
                 "endpoint": "https://app.swaggerhub.com/apis-docs/youtubenlp/backend/0.0.1",
             },
         },
@@ -237,8 +237,8 @@ async def root(request: Request):
                 "description": "Return Words frequency",
                 "endpoint": f"{base_url}word-cloud/{{video_id}}",
             },
-	   "Comment-Sentiment-Analysis": {
-                "description": "Return comment sentiments ananlysis ",
+	        "Comment-Sentiment-Analysis": {
+                "description": "Return comment sentiments analysis",
                 "endpoint": f"{base_url}sentiment/{{video_id}}{{/number_of_comments_for_analysis}}",
             },
         },

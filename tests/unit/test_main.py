@@ -57,7 +57,7 @@ def test_wordcloud():
 
 
 def test_sentiments_details():
-    response = client.get("/sentiments/2DG3pMcNNlw")
+    response = client.get("/sentiments/2DG3pMcNNlw/20")
     assert response.status_code == 200
 
 
