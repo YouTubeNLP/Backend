@@ -102,7 +102,7 @@ srsly==1.0.2
 starlette==0.13.4
 tensorboard==2.3.0
 tensorboard-plugin-wit==1.7.0
-tensorflow==2.3.0
+tensorflow==2.3.1
 tensorflow-estimator==2.3.0
 tensorflow-serving-api==2.3.0
 termcolor==1.1.0
